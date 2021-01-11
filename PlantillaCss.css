@@ -1,0 +1,333 @@
+/** @import url('https://fonts.googleapis.com/css2? family = Niconne & display = swap'); **/
+
+/****** Variables Styles *********/
+
+/* Guardar: Tipografías, Colores, Tamaños */
+
+:root{
+  --colorPrimario: rgba(187, 91, 47, 0.452); 
+  --colorSecundario: rgba(134, 13, 138, 0.452);
+  --colorFondo:grey;
+
+  --fuentePrimaria: 'Lato ', 'Sans-Serif';
+}
+
+/* background-color: var(--colorPrimario); */
+/* font-family: var(--fuentePrimaria); */
+
+
+/****** Generals Styles *********/
+
+body{
+
+  font-size: 2em;
+  background-color: var(--colorFondo);
+  
+}
+
+
+
+.containerHeader, .containerMain, .containerFooter{
+
+  display: flex;
+  min-height: 20%;
+  flex-wrap: wrap;
+  background-color: wheat;
+  margin: 1rem 0rem;
+  
+}
+
+
+.containerPrincipal{
+  max-width: 1300px; /* Para que en las TV no abarque toda la pantalla */
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+
+/****** Header *********/
+
+
+
+.divTitular{
+
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 2px solid;
+
+  background: rgb(23,23,23);
+  background: linear-gradient(90deg, rgba(23,23,23,0.9178046218487395) 7%, rgba(223,217,102,0.8085609243697479) 7%, rgba(223,217,102,0.8281687675070029) 93%, rgba(22,22,22,0.9262079831932774) 93%);
+  box-shadow: 1px 0px 6px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 0px 6px 1px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 1px 0px 6px 1px rgba(0,0,0,0.75);
+}
+
+.divTitular h1, .divTitular h2{
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0% 3rem;
+  line-height: 2.5rem;
+}
+
+
+.divTitular h3{
+  font-size: 1.2rem;
+  padding: 0% 3rem;
+}
+
+.red{
+  color:red;
+}
+
+.green{
+  color: darkgreen;
+}
+.blue {
+  color: blue;
+}
+
+hr{
+  width: 75%;
+}
+
+.divImagenes{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1rem;
+  margin: 1rem 0rem;
+}
+
+
+.divImagenes img{
+  border: solid 2px black;
+}
+
+
+/*background-image: url(img/fondo.png);*/
+
+
+/****** Multimedia y Contador *********/
+
+.containerMultimediaYContador{
+  width: 100%;
+  padding: 1rem 1rem;
+  background: #4CAF50;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.divMultimedia{
+  width: 400px;
+}
+
+
+.divContador{
+  margin: auto;
+}
+
+
+.divContador p{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+
+
+
+/****** div Listas *********/
+
+.divLista{
+
+  width: 100%;
+  background-color: #85FFBD;
+  background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);  
+  padding: 2rem 5rem;
+  font-size: 1.5rem;
+  font-weight: bold;  
+  text-align: left;
+}
+
+.divLista li{
+  margin-bottom: 1.5rem;
+}
+
+
+/****** Profile *********/
+
+.profileContainer{
+  display: grid;
+  grid-template-columns: 33% auto;
+  grid-template-rows: auto;
+  border-top: 2px white solid;
+  border-bottom: 2px white solid;
+  padding: 1rem;
+  background: #a2d6d6;
+}
+
+
+.profileContainer img{
+  justify-self: center;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 1px rgba(197 197 197 / 75%);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(197 197 197 / 75%);
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(197 197 197 / 75%);    
+}
+
+.divTextProfile{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  row-gap: 2rem;
+  text-align: left;
+  align-items: center;
+}
+
+
+.divTextProfile h1{
+  font-size: 2rem;
+  font-weight: bold;
+
+}
+
+
+.divTextProfile h2{
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.divTextProfile h4{
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+.divTextProfile button{
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 2px solid black;
+  color: #ececec;
+  cursor: pointer;
+  outline: 0px;
+  padding: 0.8rem;
+}
+
+.facebook {
+  background: rgb(50, 94, 164);
+}
+
+.facebook:hover {
+  background: rgb(49, 89, 150);
+}
+
+.youtube{
+  background: rgb(204, 66, 51);
+}
+
+.youtube:hover {
+  background: rgb(184, 62, 46);
+}
+
+.instagram{
+  background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.linkedin{
+  background: rgb(37, 118, 147);
+}
+
+.linkedin:hover {
+    background: rgb(34, 108, 135);
+}
+
+
+
+/****** MediaQuery *********/
+
+@media (max-width:1050px){
+  .divImagenes img{
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width:1250px){
+
+  .profileContainer img{
+    padding: 2rem 0rem;
+  }
+  
+@media (max-width:450px){
+  
+  .divTitular h1{
+    padding: 0%;
+  }
+
+  .divTitular h2{
+    padding: 0%;
+  }
+
+  .divTitular span{
+    font-size: 1.3rem;
+  }
+
+}
+
+@media (max-width:1015px){
+  .divMultimedia { margin: auto; }
+}
+
+  .profileContainer{
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+  }
+
+  .divTextProfile{
+    text-align: center;
+    padding: 0% 1rem;
+  }
+
+  .divButtonsSocials{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+  }
+
+  .divButtonsSocials button{
+    min-width: 150px;
+  
+  }
+
+
+}
+
+.divMultimedia video{
+  width: 100%;
+}
+
+
+@media (max-width:520px){
+  iframe{width: 100%;}
+}
+
+/****** Footer *********/
+
+
+
+/* --- Aplica el Reset CSS  ---  */
+
+/* --- Compresor CSS en Linea -> https://csscompressor.com  ---  */
+
+/* --- Valida el CSS -> https://validator.w3.org/.validate_by_uri  ---  */
+
+                                            
+
+
+/* Webs para buenas prácticas en Css */
+
+/* https://code.tutsplus.com/es/tutorials/30-css-best-practices-for-beginners--net-6741 */
+   
